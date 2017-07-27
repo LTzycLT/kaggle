@@ -1,0 +1,14 @@
+#dow -> p_vector, pu_vector
+#hour_of_day -> p_vector, pu_vector
+
+#product name -> word2vector
+#aisle, (reorder, sum count)
+#department (reorder, sum count)
+#reorder / order ratio
+
+light gbm tuning
+xgboost tuning
+
+stacking
+
+According to my experiment and calculation, different order should have different threshold. For example, case1: reorder_prob(A) = 0.9, reorder_prob(B) = 0.3 expectation(F1(A)) = 0.81 expectation(F1(A B))=0.71 case2 reorder_prob(A) = 0.3, reorder_prob(B) = 0.2 expectation(F1(A)) = 0.28 expectation(F1(A B))=0.313333333
